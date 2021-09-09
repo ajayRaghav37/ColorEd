@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="36248ANIco.in.ColorEd" Publisher="CN=1ED90121-0E00-43DD-B6A0-52121779E830" Version="1.0.0.3" />
+  <Properties>
+    <DisplayName>ColorEd</DisplayName>
+    <PublisherDisplayName>ANIco.in</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ColorEd.App">
+      <VisualElements DisplayName="ColorEd" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="ColorEd is an immersive educational app about colors. It inherits a nice introduction about colors. ColorEd also contains introduction, understanding as well as exercise of various color models. It also has a brief description of color blindness. Along with a beautiful colorizer, it also feature links for more information." ForegroundText="light" BackgroundColor="#D24827" ToastCapable="false">
+        <DefaultTile ShortName="ColorEd" WideLogo="Assets\WideLogo.png" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#D24827" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

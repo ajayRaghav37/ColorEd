@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F883B271-306E-4190-B904-260C44CF4FE1}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <RootNamespace>ColorEd</RootNamespace>
+    <AssemblyName>ColorEd</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>ColorEd_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>FC3093FDC37BB840A77966466C3459168675D057</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>NETFX_CORE</DefineConstants>
+    <DocumentationFile>ColorEd.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>NETFX_CORE</DefineConstants>
+    <DocumentationFile>ColorEd.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>NETFX_CORE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>ColorEd.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>ColorEd.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>NETFX_CORE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>ColorEd.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>ColorEd.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>NETFX_CORE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>ColorEd.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>ColorEd.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.vb">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColBlind.xaml.vb">
+      <DependentUpon>ColBlind.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColExer.xaml.vb">
+      <DependentUpon>ColExer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BindableBase.vb" />
+    <Compile Include="Common\BooleanNegationConverter.vb" />
+    <Compile Include="Common\BooleanToVisibilityConverter.vb" />
+    <Compile Include="Common\LayoutAwarePage.vb" />
+    <Compile Include="Common\RichTextColumns.vb" />
+    <Compile Include="Common\SuspensionManager.vb" />
+    <Compile Include="Conventions.xaml.vb">
+      <DependentUpon>Conventions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingMe.xaml.vb">
+      <DependentUpon>LoadingMe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.vb">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="NamedCol.xaml.vb">
+      <DependentUpon>NamedCol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Universal.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="ColorEd_StoreKey.pfx" />
+    <None Include="ColorEd_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-140.png" />
+    <Content Include="Assets\BadgeLogo.scale-180.png" />
+    <Content Include="Assets\ColBlind-150px.scale-100.png" />
+    <Content Include="Assets\ColBlind-150px.scale-140.png" />
+    <Content Include="Assets\ColBlind-150px.scale-180.png" />
+    <Content Include="Assets\ColBlind-150px.scale-80.png" />
+    <Content Include="Assets\ColBlind-200px.scale-100.png" />
+    <Content Include="Assets\ColBlind-200px.scale-140.png" />
+    <Content Include="Assets\ColBlind-200px.scale-180.png" />
+    <Content Include="Assets\ColBlind-200px.scale-80.png" />
+    <Content Include="Assets\ColLoad.scale-100.png" />
+    <Content Include="Assets\ColLoad.scale-140.png" />
+    <Content Include="Assets\ColLoad.scale-180.png" />
+    <Content Include="Assets\ColLoad.scale-80.png" />
+    <Content Include="Assets\Colors\Alice Blue.png" />
+    <Content Include="Assets\Colors\Antique White.png" />
+    <Content Include="Assets\Colors\Aqua.png" />
+    <Content Include="Assets\Colors\Aquamarine.png" />
+    <Content Include="Assets\Colors\Azure.png" />
+    <Content Include="Assets\Colors\Beige.png" />
+    <Content Include="Assets\Colors\Bisque.png" />
+    <Content Include="Assets\Colors\Black.png" />
+    <Content Include="Assets\Colors\Blanched Almond.png" />
+    <Content Include="Assets\Colors\Blue Violet.png" />
+    <Content Include="Assets\Colors\Blue.png" />
+    <Content Include="Assets\Colors\Brown.png" />
+    <Content Include="Assets\Colors\Burly Wood.png" />
+    <Content Include="Assets\Colors\Cadet Blue.png" />
+    <Content Include="Assets\Colors\Chartreuse.png" />
+    <Content Include="Assets\Colors\Chocolate.png" />
+    <Content Include="Assets\Colors\Coral.png" />
+    <Content Include="Assets\Colors\Cornflower Blue.png" />
+    <Content Include="Assets\Colors\Cornsilk.png" />
+    <Content Include="Assets\Colors\Crimson.png" />
+    <Content Include="Assets\Colors\Cyan.png" />
+    <Content Include="Assets\Colors\Dark Blue.png" />
+    <Content Include="Assets\Colors\Dark Cyan.png" />
+    <Content Include="Assets\Colors\Dark Goldenrod.png" />
+    <Content Include="Assets\Colors\Dark Gray.png" />
+    <Content Include="Assets\Colors\Dark Green.png" />
+    <Content Include="Assets\Colors\Dark Khaki.png" />
+    <Content Include="Assets\Colors\Dark Magenta.png" />
+    <Content Include="Assets\Colors\Dark Olive Green.png" />
+    <Content Include="Assets\Colors\Dark Orange.png" />
+    <Content Include="Assets\Colors\Dark Orchid.png" />
+    <Content Include="Assets\Colors\Dark Red.png" />
+    <Content Include="Assets\Colors\Dark Salmon.png" />
+    <Content Include="Assets\Colors\Dark Sea Green.png" />
+    <Content Include="Assets\Colors\Dark Slate Blue.png" />
+    <Content Include="Assets\Colors\Dark Slate Gray.png" />
+    <Content Include="Assets\Colors\Dark Turquoise.png" />
+    <Content Include="Assets\Colors\Dark Violet.png" />
+    <Content Include="Assets\Colors\Deep Pink.png" />
+    <Content Include="Assets\Colors\Deep Sky Blue.png" />
+    <Content Include="Assets\Colors\Dim Gray.png" />
+    <Content Include="Assets\Colors\Dodger Blue.png" />
+    <Content Include="Assets\Colors\Firebrick.png" />
+    <Content Include="Assets\Colors\Floral White.png" />
+    <Content Include="Assets\Colors\Forest Green.png" />
+    <Content Include="Assets\Colors\Fuchsia.png" />
+    <Content Include="Assets\Colors\Gainsboro.png" />
+    <Content Include="Assets\Colors\Ghost White.png" />
+    <Content Include="Assets\Colors\Gold.png" />
+    <Content Include="Assets\Colors\Goldenrod.png" />
+    <Content Include="Assets\Colors\Gray.png" />
+    <Content Include="Assets\Colors\Green Yellow.png" />
+    <Content Include="Assets\Colors\Green.png" />
+    <Content Include="Assets\Colors\Honeydew.png" />
+    <Content Include="Assets\Colors\Hot Pink.png" />
+    <Content Include="Assets\Colors\Indian Red.png" />
+    <Content Include="Assets\Colors\Indigo.png" />
+    <Content Include="Assets\Colors\Ivory.png" />
+    <Content Include="Assets\Colors\Khaki.png" />
+    <Content Include="Assets\Colors\Lavender Blush.png" />
+    <Content Include="Assets\Colors\Lavender.png" />
+    <Content Include="Assets\Colors\Lawn Green.png" />
+    <Content Include="Assets\Colors\Lemon Chiffon.png" />
+    <Content Include="Assets\Colors\Light Blue.png" />
+    <Content Include="Assets\Colors\Light Coral.png" />
+    <Content Include="Assets\Colors\Light Cyan.png" />
+    <Content Include="Assets\Colors\Light Goldenrod Yellow.png" />
+    <Content Include="Assets\Colors\Light Gray.png" />
+    <Content Include="Assets\Colors\Light Green.png" />
+    <Content Include="Assets\Colors\Light Pink.png" />
+    <Content Include="Assets\Colors\Light Salmon.png" />
+    <Content Include="Assets\Colors\Light Sea Green.png" />
+    <Content Include="Assets\Colors\Light Sky Blue.png" />
+    <Content Include="Assets\Colors\Light Slate Gray.png" />
+    <Content Include="Assets\Colors\Light Steel Blue.png" />
+    <Content Include="Assets\Colors\Light Yellow.png" />
+    <Content Include="Assets\Colors\Lime Green.png" />
+    <Content Include="Assets\Colors\Lime.png" />
+    <Content Include="Assets\Colors\Linen.png" />
+    <Content Include="Assets\Colors\Magenta.png" />
+    <Content Include="Assets\Colors\Maroon.png" />
+    <Content Include="Assets\Colors\Medium Aquamarine.png" />
+    <Content Include="Assets\Colors\Medium Blue.png" />
+    <Content Include="Assets\Colors\Medium Orchid.png" />
+    <Content Include="Assets\Colors\Medium Purple.png" />
+    <Content Include="Assets\Colors\Medium Sea Green.png" />
+    <Content Include="Assets\Colors\Medium Slate Blue.png" />
+    <Content Include="Assets\Colors\Medium Spring Green.png" />
+    <Content Include="Assets\Colors\Medium Turquoise.png" />
+    <Content Include="Assets\Colors\Medium Violet Red.png" />
+    <Content Include="Assets\Colors\Midnight Blue.png" />
+    <Content Include="Assets\Colors\Mint Cream.png" />
+    <Content Include="Assets\Colors\Misty Rose.png" />
+    <Content Include="Assets\Colors\Moccasin.png" />
+    <Content Include="Assets\Colors\Navajo White.png" />
+    <Content Include="Assets\Colors\Navy.png" />
+    <Content Include="Assets\Colors\Old Lace.png" />
+    <Content Include="Assets\Colors\Olive Drab.png" />
+    <Content Include="Assets\Colors\Olive.png" />
+    <Content Include="Assets\Colors\Orange Red.png" />
+    <Content Include="Assets\Colors\Orange.png" />
+    <Content Include="Assets\Colors\Orchid.png" />
+    <Content Include="Assets\Colors\Pale Goldenrod.png" />
+    <Content Include="Assets\Colors\Pale Green.png" />
+    <Content Include="Assets\Colors\Pale Turquoise.png" />
+    <Content Include="Assets\Colors\Pale Violet Red.png" />
+    <Content Include="Assets\Colors\Papaya Whip.png" />
+    <Content Include="Assets\Colors\Peach Puff.png" />
+    <Content Include="Assets\Colors\Peru.png" />
+    <Content Include="Assets\Colors\Pink.png" />
+    <Content Include="Assets\Colors\Plum.png" />
+    <Content Include="Assets\Colors\Powder Blue.png" />
+    <Content Include="Assets\Colors\Purple.png" />
+    <Content Include="Assets\Colors\Red.png" />
+    <Content Include="Assets\Colors\Rosy Brown.png" />
+    <Content Include="Assets\Colors\Royal Blue.png" />
+    <Content Include="Assets\Colors\Saddle Brown.png" />
+    <Content Include="Assets\Colors\Salmon.png" />
+    <Content Include="Assets\Colors\Sandy Brown.png" />
+    <Content Include="Assets\Colors\Sea Green.png" />
+    <Content Include="Assets\Colors\Sea Shell.png" />
+    <Content Include="Assets\Colors\Sienna.png" />
+    <Content Include="Assets\Colors\Silver.png" />
+    <Content Include="Assets\Colors\Sky Blue.png" />
+    <Content Include="Assets\Colors\Slate Blue.png" />
+    <Content Include="Assets\Colors\Slate Gray.png" />
+    <Content Include="Assets\Colors\Snow.png" />
+    <Content Include="Assets\Colors\Spring Green.png" />
+    <Content Include="Assets\Colors\Steel Blue.png" />
+    <Content Include="Assets\Colors\Tan.png" />
+    <Content Include="Assets\Colors\Teal.png" />
+    <Content Include="Assets\Colors\Thistle.png" />
+    <Content Include="Assets\Colors\Tomato.png" />
+    <Content Include="Assets\Colors\Turquoise.png" />
+    <Content Include="Assets\Colors\Violet.png" />
+    <Content Include="Assets\Colors\Wheat.png" />
+    <Content Include="Assets\Colors\White Smoke.png" />
+    <Content Include="Assets\Colors\White.png" />
+    <Content Include="Assets\Colors\Yellow Green.png" />
+    <Content Include="Assets\Colors\Yellow.png" />
+    <Content Include="Assets\Eye-200px.scale-100.png" />
+    <Content Include="Assets\Eye-200px.scale-140.png" />
+    <Content Include="Assets\Eye-200px.scale-180.png" />
+    <Content Include="Assets\Eye-200px.scale-80.png" />
+    <Content Include="Assets\Eye-75px.scale-100.png" />
+    <Content Include="Assets\Eye-75px.scale-140.png" />
+    <Content Include="Assets\Eye-75px.scale-180.png" />
+    <Content Include="Assets\Eye-75px.scale-80.png" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\Logo.scale-140.png" />
+    <Content Include="Assets\Logo.scale-180.png" />
+    <Content Include="Assets\Logo.scale-80.png" />
+    <Content Include="Assets\Mountains.png" />
+    <Content Include="Assets\PageTitle-28px.scale-100.png" />
+    <Content Include="Assets\PageTitle-28px.scale-140.png" />
+    <Content Include="Assets\PageTitle-28px.scale-180.png" />
+    <Content Include="Assets\PageTitle-28px.scale-80.png" />
+    <Content Include="Assets\PageTitle-60px.scale-100.png" />
+    <Content Include="Assets\PageTitle-60px.scale-140.png" />
+    <Content Include="Assets\PageTitle-60px.scale-180.png" />
+    <Content Include="Assets\PageTitle-60px.scale-80.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-140.png" />
+    <Content Include="Assets\SmallLogo.scale-180.png" />
+    <Content Include="Assets\SmallLogo.scale-80.png" />
+    <Content Include="Assets\SmallLogo.targetsize-16.png" />
+    <Content Include="Assets\SmallLogo.targetsize-256.png" />
+    <Content Include="Assets\SmallLogo.targetsize-32.png" />
+    <Content Include="Assets\SmallLogo.targetsize-48.png" />
+    <Content Include="Assets\Spectrum-300px.scale-100.png" />
+    <Content Include="Assets\Spectrum-300px.scale-140.png" />
+    <Content Include="Assets\Spectrum-300px.scale-180.png" />
+    <Content Include="Assets\Spectrum-300px.scale-80.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-140.png" />
+    <Content Include="Assets\SplashScreen.scale-180.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-140.png" />
+    <Content Include="Assets\StoreLogo.scale-180.png" />
+    <Content Include="Assets\WideLogo.scale-100.png" />
+    <Content Include="Assets\WideLogo.scale-140.png" />
+    <Content Include="Assets\WideLogo.scale-180.png" />
+    <Content Include="Assets\WideLogo.scale-80.png" />
+    <Content Include="Common\ReadMe.txt" />
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="ColBlind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ColExer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Conventions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadingMe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NamedCol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections.ObjectModel" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Runtime.CompilerServices" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Windows.ApplicationModel" />
+    <Import Include="Windows.ApplicationModel.Activation" />
+    <Import Include="Windows.Foundation" />
+    <Import Include="Windows.Foundation.Collections" />
+    <Import Include="Windows.Graphics.Display" />
+    <Import Include="Windows.UI.ViewManagement" />
+    <Import Include="Windows.UI.Xaml" />
+    <Import Include="Windows.UI.Xaml.Controls" />
+    <Import Include="Windows.UI.Xaml.Controls.Primitives" />
+    <Import Include="Windows.UI.Xaml.Data" />
+    <Import Include="Windows.UI.Xaml.Input" />
+    <Import Include="Windows.UI.Xaml.Media" />
+    <Import Include="Windows.UI.Xaml.Media.Imaging" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
